@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stelle – Job Services</title>
+<meta name="description" content="Stellenprofil und Bewerbung bei Job Services, der Personalvermittlung fürs Autogewerbe.">
+<link rel="canonical" href="https://jobservices.ch/stelle.html">
+<meta name="theme-color" content="#0F5257">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Job Services">
+<meta property="og:title" content="Stelle – Job Services">
+<meta property="og:description" content="Stellenprofil und Bewerbung bei Job Services, der Personalvermittlung fürs Autogewerbe.">
+<meta property="og:url" content="https://jobservices.ch/stelle.html">
+<meta property="og:image" content="https://jobservices.ch/assets/img/og-image.png">
+<meta property="og:locale" content="de_CH">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Job Services – zur Startseite"><svg viewBox="0 -2 56 66" aria-hidden="true" focusable="false"><path d="M36 8 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#0F5257" stroke-width="12" stroke-linecap="round"/><path d="M36 12 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#B5E853" stroke-width="2" stroke-dasharray="4 5"/><path d="M27 10 L36 1 L45 10" fill="none" stroke="#0F5257" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand__text">job services<small>Personalvermittlung fürs Autogewerbe</small></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars"><span></span></span><span>Menü</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="stellen.html" aria-current="page">Offene Stellen</a></li>
+        <li><a href="betriebe.html">Für Betriebe</a></li>
+        <li><a href="fachkraefte.html">Für Fachkräfte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li class="nav-cta"><a class="btn btn--petrol" href="stellen.html">Jetzt bewerben</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Brotkrümel"><a href="stellen.html">Offene Stellen</a> / <span id="job-crumb">Stelle</span></nav>
+    <h1 id="job-title">Stelle wird geladen …</h1>
+    <p class="lead" id="job-lead" hidden></p>
+  </div>
+</section>
+<section class="section" style="padding-top:24px">
+  <div class="container job-detail">
+    <div class="stack" id="job-detail" aria-live="polite"></div>
+    <div class="job-detail__form">
+<div class="form-card form-card--mint" id="apply">
+  <div class="stack form-intro">
+    <h2>Jetzt bewerben</h2>
+    <p class="hint">Dauert etwa 3 Minuten. Felder mit <span class="req">*</span> sind Pflicht.</p>
+  </div>
+  <form id="apply-form" data-action="apply" novalidate>
+    <input type="hidden" name="jobId" value="">
+    <input type="hidden" name="jobTitle" value="">
+    <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+    <div class="form-grid">
+      <div class="field"><label for="vorname">Vorname<span class="req" aria-hidden="true">*</span></label><input class="input" id="vorname" name="vorname" type="text" required autocomplete="given-name" aria-describedby="vorname-err" ><span class="field__error" id="vorname-err" aria-live="polite"></span></div>
+      <div class="field"><label for="nachname">Nachname<span class="req" aria-hidden="true">*</span></label><input class="input" id="nachname" name="nachname" type="text" required autocomplete="family-name" aria-describedby="nachname-err" ><span class="field__error" id="nachname-err" aria-live="polite"></span></div>
+      <div class="field"><label for="email">E-Mail<span class="req" aria-hidden="true">*</span></label><input class="input" id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-err" inputmode="email"><span class="field__error" id="email-err" aria-live="polite"></span></div>
+      <div class="field"><label for="telefon">Telefon<span class="req" aria-hidden="true">*</span></label><input class="input" id="telefon" name="telefon" type="tel" required autocomplete="tel" aria-describedby="telefon-err" inputmode="tel" placeholder="079 123 45 67"><span class="field__error" id="telefon-err" aria-live="polite"></span></div>
+      <div class="field"><label for="wohnort">Wohnort</label><input class="input" id="wohnort" name="wohnort" type="text" autocomplete="address-level2" aria-describedby="wohnort-err" placeholder="PLZ und Ort"><span class="field__error" id="wohnort-err" aria-live="polite"></span></div>
+      <div class="field"><label for="verfuegbar">Verfügbar ab</label><input class="input" id="verfuegbar" name="verfuegbar" type="text" aria-describedby="verfuegbar-err" placeholder="z. B. sofort, 3 Monate Kündigungsfrist"><span class="field__error" id="verfuegbar-err" aria-live="polite"></span></div>
+      <div class="field field--full"><label for="lohn">Lohnvorstellung pro Jahr (brutto)<span class="req" aria-hidden="true">*</span></label><div class="input-affix"><span aria-hidden="true">CHF</span><input class="input" id="lohn" name="lohn" type="text" required aria-describedby="lohn-hint lohn-err" inputmode="numeric" data-type="chf" placeholder="72000"></div><span class="hint" id="lohn-hint">Jahreslohn inkl. 13. Monatslohn, z. B. 72000.</span><span class="field__error" id="lohn-err" aria-live="polite"></span></div>
+      <div class="field field--full"><span class="field__label" id="lebenslauf-label">Lebenslauf<span class="req" aria-hidden="true">*</span></span><div class="file"><span class="file__title"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 16V4m0 0l-5 5m5-5l5 5M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Datei wählen oder Foto aufnehmen</span><span class="hint">PDF, Word oder Foto, max. 5 MB</span><input type="file" id="lebenslauf" name="lebenslauf" required data-max-files="1" aria-labelledby="lebenslauf-label" aria-describedby="lebenslauf-err" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic,application/pdf,image/*"><ul class="file__list" aria-live="polite"></ul></div><span class="field__error" id="lebenslauf-err" aria-live="polite"></span></div>
+      <div class="field field--full"><span class="field__label" id="motivation-label">Motivationsschreiben</span><div class="file"><span class="file__title"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 16V4m0 0l-5 5m5-5l5 5M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Datei wählen oder Foto aufnehmen</span><span class="hint">Optional. Du kannst uns auch unten ein paar Zeilen schreiben.</span><input type="file" id="motivation" name="motivation" data-max-files="1" aria-labelledby="motivation-label" aria-describedby="motivation-err" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic,application/pdf,image/*"><ul class="file__list" aria-live="polite"></ul></div><span class="field__error" id="motivation-err" aria-live="polite"></span></div>
+      <div class="field field--full"><span class="field__label" id="weitere-label">Zeugnisse und Diplome</span><div class="file"><span class="file__title"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 16V4m0 0l-5 5m5-5l5 5M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Datei wählen oder Foto aufnehmen</span><span class="hint">Optional, bis 5 Dateien</span><input type="file" id="weitere" name="weitere" multiple data-max-files="5" aria-labelledby="weitere-label" aria-describedby="weitere-err" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic,application/pdf,image/*"><ul class="file__list" aria-live="polite"></ul></div><span class="field__error" id="weitere-err" aria-live="polite"></span></div>
+      <div class="field field--full"><label for="nachricht">Nachricht an uns</label><textarea class="textarea" id="nachricht" name="nachricht" aria-describedby="nachricht-err" maxlength="3000" placeholder="Was ist dir bei deiner nächsten Stelle wichtig?"></textarea><span class="field__error" id="nachricht-err" aria-live="polite"></span></div>
+      <div class="field field--full">
+        <label class="check"><input type="checkbox" id="consent" name="consent" required aria-describedby="consent-err"><span>Ich bin einverstanden, dass Job Services meine Angaben zur Stellenvermittlung bearbeitet. Mein Dossier wird nur mit meiner Zustimmung an einen Betrieb weitergegeben. Details in der <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>.<span class="req" aria-hidden="true">*</span></span></label>
+        <span class="field__error" id="consent-err" aria-live="polite"></span>
+      </div>
+    </div>
+    <p class="notice notice--error form-error" role="alert" hidden></p>
+    <button class="btn btn--petrol btn--block" type="submit">Bewerbung senden</button>
+  </form>
+</div>
+</div>
+  </div>
+</section>
+</main>
+<div class="sticky-apply"><a class="btn btn--lime btn--block" href="#apply">Jetzt bewerben</a></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="stack">
+        <a class="brand" href="index.html" aria-label="Job Services – zur Startseite"><svg viewBox="0 -2 56 66" aria-hidden="true" focusable="false"><path d="M36 8 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/><path d="M36 12 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#B5E853" stroke-width="2" stroke-dasharray="4 5"/><path d="M27 10 L36 1 L45 10" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>job services</span></a>
+        <p>Personalvermittlung fürs Autogewerbe. Wir vermitteln Fachkräfte in Festanstellung an Garagen und Autohäuser im Raum Zürich.</p>
+        <p><a href="mailto:info@jobservices.ch">info@jobservices.ch</a></p>
+      </div>
+      <div>
+        <h2>Für Fachkräfte</h2>
+        <ul>
+          <li><a href="stellen.html">Offene Stellen</a></li>
+          <li><a href="stelle.html?id=spontan">Spontan bewerben</a></li>
+          <li><a href="fachkraefte.html">So funktioniert's</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Für Betriebe</h2>
+        <ul>
+          <li><a href="betriebe.html">Unser Angebot</a></li>
+          <li><a href="betriebe.html#stelle-melden">Stelle melden</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span id="year">2026</span> Job Services</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

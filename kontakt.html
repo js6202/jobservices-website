@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontakt – Job Services</title>
+<meta name="description" content="Kontakt zu Job Services, der Personalvermittlung fürs Autogewerbe im Raum Zürich.">
+<link rel="canonical" href="https://jobservices.ch/kontakt.html">
+<meta name="theme-color" content="#0F5257">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Job Services">
+<meta property="og:title" content="Kontakt – Job Services">
+<meta property="og:description" content="Kontakt zu Job Services, der Personalvermittlung fürs Autogewerbe im Raum Zürich.">
+<meta property="og:url" content="https://jobservices.ch/kontakt.html">
+<meta property="og:image" content="https://jobservices.ch/assets/img/og-image.png">
+<meta property="og:locale" content="de_CH">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Job Services – zur Startseite"><svg viewBox="0 -2 56 66" aria-hidden="true" focusable="false"><path d="M36 8 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#0F5257" stroke-width="12" stroke-linecap="round"/><path d="M36 12 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#B5E853" stroke-width="2" stroke-dasharray="4 5"/><path d="M27 10 L36 1 L45 10" fill="none" stroke="#0F5257" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand__text">job services<small>Personalvermittlung fürs Autogewerbe</small></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars"><span></span></span><span>Menü</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="stellen.html">Offene Stellen</a></li>
+        <li><a href="betriebe.html">Für Betriebe</a></li>
+        <li><a href="fachkraefte.html">Für Fachkräfte</a></li>
+        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        <li class="nav-cta"><a class="btn btn--petrol" href="stellen.html">Jetzt bewerben</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Kontakt</span>
+    <h1>Schreiben Sie uns.</h1>
+    <p class="lead">Ob Sie Personal suchen oder selbst eine neue Stelle: Wir melden uns persönlich.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:24px">
+  <div class="container split">
+    <div class="stack">
+      <div class="door">
+        <h2 style="font-size:1.3rem">E-Mail</h2>
+        <p><a href="mailto:info@jobservices.ch" style="font-weight:700;font-size:1.1rem">info@jobservices.ch</a></p>
+      </div>
+      <div class="door">
+        <h2 style="font-size:1.3rem">Job Services</h2>
+        <p><span class="placeholder">[Inhaber / Firma]</span><br><span class="placeholder">[Strasse Nr.]</span><br><span class="placeholder">[PLZ Ort]</span></p>
+      </div>
+    </div>
+    <div class="form-card">
+<form id="contact-form" data-action="contact" novalidate>
+  <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+  <div class="form-grid">
+    <div class="field field--full">
+      <fieldset class="choice-group" aria-describedby="typ-err">
+        <legend>Ich bin <span class="req" aria-hidden="true">*</span></legend>
+        <label class="choice"><input type="radio" name="typ" value="Betrieb" required><span>ein Betrieb</span></label>
+        <label class="choice"><input type="radio" name="typ" value="Fachkraft" required><span>eine Fachkraft</span></label>
+        <label class="choice"><input type="radio" name="typ" value="Andere Anfrage" required><span>etwas anderes</span></label>
+      </fieldset>
+      <span class="field__error" id="typ-err" aria-live="polite"></span>
+    </div>
+    <div class="field"><label for="name">Name<span class="req" aria-hidden="true">*</span></label><input class="input" id="name" name="name" type="text" required autocomplete="name" aria-describedby="name-err" ><span class="field__error" id="name-err" aria-live="polite"></span></div>
+    <div class="field"><label for="firma">Firma</label><input class="input" id="firma" name="firma" type="text" autocomplete="organization" aria-describedby="firma-err" placeholder="optional"><span class="field__error" id="firma-err" aria-live="polite"></span></div>
+    <div class="field"><label for="email">E-Mail<span class="req" aria-hidden="true">*</span></label><input class="input" id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-err" inputmode="email"><span class="field__error" id="email-err" aria-live="polite"></span></div>
+    <div class="field"><label for="telefon">Telefon</label><input class="input" id="telefon" name="telefon" type="tel" autocomplete="tel" aria-describedby="telefon-err" inputmode="tel" placeholder="optional"><span class="field__error" id="telefon-err" aria-live="polite"></span></div>
+    <div class="field field--full"><label for="nachricht">Nachricht<span class="req" aria-hidden="true">*</span></label><textarea class="textarea" id="nachricht" name="nachricht" required aria-describedby="nachricht-err" maxlength="5000"></textarea><span class="field__error" id="nachricht-err" aria-live="polite"></span></div>
+  </div>
+  <p class="notice notice--error form-error" role="alert" hidden></p>
+  <button class="btn btn--petrol btn--block" type="submit">Nachricht senden</button>
+  <p class="hint" style="margin-top:12px">Ihre Nachricht geht direkt an info@jobservices.ch. Wir verwenden Ihre Angaben nur zur Beantwortung (<a href="datenschutz.html">Datenschutz</a>).</p>
+</form>
+</div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="stack">
+        <a class="brand" href="index.html" aria-label="Job Services – zur Startseite"><svg viewBox="0 -2 56 66" aria-hidden="true" focusable="false"><path d="M36 8 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/><path d="M36 12 V38 a14 14 0 0 1 -28 0" fill="none" stroke="#B5E853" stroke-width="2" stroke-dasharray="4 5"/><path d="M27 10 L36 1 L45 10" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>job services</span></a>
+        <p>Personalvermittlung fürs Autogewerbe. Wir vermitteln Fachkräfte in Festanstellung an Garagen und Autohäuser im Raum Zürich.</p>
+        <p><a href="mailto:info@jobservices.ch">info@jobservices.ch</a></p>
+      </div>
+      <div>
+        <h2>Für Fachkräfte</h2>
+        <ul>
+          <li><a href="stellen.html">Offene Stellen</a></li>
+          <li><a href="stelle.html?id=spontan">Spontan bewerben</a></li>
+          <li><a href="fachkraefte.html">So funktioniert's</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Für Betriebe</h2>
+        <ul>
+          <li><a href="betriebe.html">Unser Angebot</a></li>
+          <li><a href="betriebe.html#stelle-melden">Stelle melden</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span id="year">2026</span> Job Services</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
