@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Impressum – Job Services</title>
-<meta name="description" content="Impressum von Job Services.">
-<link rel="canonical" href="https://jobservices.ch/impressum.html">
+<meta name="robots" content="noindex, nofollow">
+<title>Kontakt – Job Services</title>
+<meta name="description" content="Kontakt zu Job Services, der Personalvermittlung fürs Autogewerbe im Raum Zürich.">
+<link rel="canonical" href="https://jobservices.ch/kontakt.html">
 <meta name="theme-color" content="#0F5257">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Job Services">
-<meta property="og:title" content="Impressum – Job Services">
-<meta property="og:description" content="Impressum von Job Services.">
-<meta property="og:url" content="https://jobservices.ch/impressum.html">
+<meta property="og:title" content="Kontakt – Job Services">
+<meta property="og:description" content="Kontakt zu Job Services, der Personalvermittlung fürs Autogewerbe im Raum Zürich.">
+<meta property="og:url" content="https://jobservices.ch/kontakt.html">
 <meta property="og:image" content="https://jobservices.ch/assets/img/og-image.png">
 <meta property="og:locale" content="de_CH">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -36,33 +37,56 @@
         <li><a href="stellen.html">Offene Stellen</a></li>
         <li><a href="betriebe.html">Für Betriebe</a></li>
         <li><a href="fachkraefte.html">Für Fachkräfte</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
         <li class="nav-cta"><a class="btn btn--petrol" href="stellen.html">Jetzt bewerben</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <main id="main">
-<section class="page-hero"><div class="container"><h1>Impressum</h1></div></section>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Kontakt</span>
+    <h1>Schreiben Sie uns.</h1>
+    <p class="lead">Ob Sie Personal suchen oder selbst eine neue Stelle: Wir melden uns persönlich.</p>
+  </div>
+</section>
 <section class="section" style="padding-top:24px">
-  <div class="container prose">
-    <!-- TODO: Angaben am Schluss einfügen (Inhaber, Rechtsform, Adresse, UID, Bewilligung) -->
-    <h2>Verantwortlich für diese Website</h2>
-    <p>Job Services<br>
-      <span class="placeholder">[Inhaber oder Firmenname gemäss Handelsregister]</span><br>
-      <span class="placeholder">[Rechtsform, z. B. Einzelfirma oder GmbH]</span><br>
-      <span class="placeholder">[Strasse Nr.]</span><br>
-      <span class="placeholder">[PLZ Ort]</span><br>
-      Schweiz</p>
-    <p>E-Mail: <a href="mailto:info@jobservices.ch">info@jobservices.ch</a></p>
-    <h2>Handelsregister</h2>
-    <p>UID: <span class="placeholder">[CHE-xxx.xxx.xxx]</span></p>
-    <h2>Bewilligung</h2>
-    <p>Private Arbeitsvermittlung mit Bewilligung des <span class="placeholder">[Amt für Wirtschaft des Kantons …]</span>, erteilt am <span class="placeholder">[Datum]</span>.</p>
-    <h2>Haftung</h2>
-    <p>Wir prüfen die Inhalte dieser Website sorgfältig. Für die Richtigkeit, Vollständigkeit und Aktualität der Stellenangebote und Informationen übernehmen wir keine Gewähr. Für Inhalte verlinkter Websites sind ausschliesslich deren Betreiber verantwortlich.</p>
-    <h2>Urheberrecht</h2>
-    <p>Texte, Logo und Gestaltung dieser Website gehören Job Services. Eine Verwendung ist nur mit schriftlicher Zustimmung erlaubt.</p>
+  <div class="container split">
+    <div class="stack">
+      <div class="door">
+        <h2 style="font-size:1.3rem">E-Mail</h2>
+        <p><a href="mailto:info@jobservices.ch" style="font-weight:700;font-size:1.1rem">info@jobservices.ch</a></p>
+      </div>
+      <div class="door">
+        <h2 style="font-size:1.3rem">Job Services</h2>
+        <p><span class="placeholder">[Inhaber / Firma]</span><br><span class="placeholder">[Strasse Nr.]</span><br><span class="placeholder">[PLZ Ort]</span></p>
+      </div>
+    </div>
+    <div class="form-card">
+<form id="contact-form" data-action="contact" novalidate>
+  <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+  <div class="form-grid">
+    <div class="field field--full">
+      <fieldset class="choice-group" aria-describedby="typ-err">
+        <legend>Ich bin <span class="req" aria-hidden="true">*</span></legend>
+        <label class="choice"><input type="radio" name="typ" value="Betrieb" required><span>ein Betrieb</span></label>
+        <label class="choice"><input type="radio" name="typ" value="Fachkraft" required><span>eine Fachkraft</span></label>
+        <label class="choice"><input type="radio" name="typ" value="Andere Anfrage" required><span>etwas anderes</span></label>
+      </fieldset>
+      <span class="field__error" id="typ-err" aria-live="polite"></span>
+    </div>
+    <div class="field"><label for="name">Name<span class="req" aria-hidden="true">*</span></label><input class="input" id="name" name="name" type="text" required autocomplete="name" aria-describedby="name-err" ><span class="field__error" id="name-err" aria-live="polite"></span></div>
+    <div class="field"><label for="firma">Firma</label><input class="input" id="firma" name="firma" type="text" autocomplete="organization" aria-describedby="firma-err" placeholder="optional"><span class="field__error" id="firma-err" aria-live="polite"></span></div>
+    <div class="field"><label for="email">E-Mail<span class="req" aria-hidden="true">*</span></label><input class="input" id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-err" inputmode="email"><span class="field__error" id="email-err" aria-live="polite"></span></div>
+    <div class="field"><label for="telefon">Telefon</label><input class="input" id="telefon" name="telefon" type="tel" autocomplete="tel" aria-describedby="telefon-err" inputmode="tel" placeholder="optional"><span class="field__error" id="telefon-err" aria-live="polite"></span></div>
+    <div class="field field--full"><label for="nachricht">Nachricht<span class="req" aria-hidden="true">*</span></label><textarea class="textarea" id="nachricht" name="nachricht" required aria-describedby="nachricht-err" maxlength="5000"></textarea><span class="field__error" id="nachricht-err" aria-live="polite"></span></div>
+  </div>
+  <p class="notice notice--error form-error" role="alert" hidden></p>
+  <button class="btn btn--petrol btn--block" type="submit">Nachricht senden</button>
+  <p class="hint" style="margin-top:12px">Ihre Nachricht geht direkt an info@jobservices.ch. Wir verwenden Ihre Angaben nur zur Beantwortung (<a href="datenschutz.html">Datenschutz</a>).</p>
+</form>
+</div>
   </div>
 </section>
 </main>
